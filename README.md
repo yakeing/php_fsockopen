@@ -115,8 +115,8 @@ Your donation makes CODE better.
 
  WeChat (微信)
  
- ![WeChat](https://oauth.applinzi.com/QrCode/230/WeChat/H/0/FFFFFF/000000/wxp%3a%7C%7Cf2f0SOGAUjQ1ALzigoyN7nW8tK68D2oeU3YO/image.png)
+ ![WeChat](https://oauth.applinzi.com/QR/230/wxp%3a%7C%7Cf2f0SOGAUjQ1ALzigoyN7nW8tK68D2oeU3YO/WeChat.png)
 
  Alipay (支付宝)
 
- ![Alipay](https://oauth.applinzi.com/QrCode/230/Alipay/H/0/FFFFFF/000000/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/image.png)
+ ![Alipay](https://oauth.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
