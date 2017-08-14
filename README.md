@@ -3,13 +3,34 @@ php Json Wed Sign class
 
 -----
 
-Author [Yakeing](http://weibo.com/yakeing)
+#### Travis CI
 
-[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/F66000/MPL2.0/image.svg)](https://github.com/yakeing/JWSign/blob/master/LICENSE)
+[![Travis-ci](https://api.travis-ci.org/yakeing/php_jwsign.svg)](https://travis-ci.org/yakeing/php_jwsign)
 
-[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/007EC6/PHP/image.svg)](https://github.com/yakeing/JWSign)
+#### Packagist
 
-[![image](https://oauth.applinzi.com/SvgLabel/4D4D4D/Version/97CA00/1.0/image.svg)](https://github.com/yakeing/JWSign/tree/master/JWSign.php)
+[![Version](http://img.shields.io/packagist/v/yakeing/php_jwsign.svg)](https://packagist.org/packages/yakeing/php_jwsign)
+[![Downloads](http://img.shields.io/packagist/dt/yakeing/php_jwsign.svg)](https://packagist.org/packages/yakeing/php_jwsign)
+
+#### Github
+
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_jwsign/total.svg)](https://github.com/yakeing/php_jwsign)
+[![Size](https://img.shields.io/github/size/yakeing/php_jwsign/src/php_jwsign/jwsign.php.svg)](https://github.com/yakeing/php_jwsign)
+[![tag](https://img.shields.io/github/tag/yakeing/php_jwsign.svg)](https://github.com/yakeing/php_jwsign)
+[![Language](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_jwsign)
+[![License](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_jwsign)
+
+BY: [yakeing](http://weibo.com/yakeing)
+
+### Installation
+
+Use [Composer](https://getcomposer.org) to install the library.
+
+```
+
+    $ composer require yakeing/php_jwsign
+
+```
 
 ### JWSign init
 
@@ -17,8 +38,8 @@ Author [Yakeing](http://weibo.com/yakeing)
 
 ```php
 
-    $JWSign = new JWSign();
-    $JWSign->SetPrivate($accesskey);
+    $jwsign = new jwsign();
+    $jwsign->SetPrivate($accesskey);
     
 ```
 
@@ -28,7 +49,7 @@ Author [Yakeing](http://weibo.com/yakeing)
 
 ```php
 
-    $Pubkey = $JWSign->GetPubkey();
+    $Pubkey = $jwsign->GetPubkey();
     
     var_dump($Pubkey);
     array(3) {
@@ -54,7 +75,7 @@ Author [Yakeing](http://weibo.com/yakeing)
         }
     ');
     
-    $JsonStr = $JWSign->SignMessage($Message);
+    $JsonStr = $jwsign->SignMessage($Message);
     
     var_dump($JsonStr);
     string(557) "{
@@ -80,7 +101,7 @@ Author [Yakeing](http://weibo.com/yakeing)
     $sign = 'hXvBULK2wvSroVFZ...-HKbHGDYHG7l8Epixikg';
     $pub = '-----BEGIN PUBLIC KEY-----\nMIIBIjA....NjQIDAQA\n-----END PUBLIC KEY----';
     
-    $Str = $JWSign->PubkeyVerify($value, $sign, $pub);
+    $Str = $jwsign->PubkeyVerify($value, $sign, $pub);
     
     var_dump($Str);
     bool(true)
@@ -113,10 +134,17 @@ Donate
 ---
 Your donation makes CODE better.
 
- WeChat (微信)
- 
+ Bitcoin (比特币赞助)
+
+ 1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU
+
+ ![Bitcoin](https://oauth.applinzi.com/QR/230/bitcoin%3a1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU/Bitcoin.png)
+
+ WeChat (微信赞助)
+
  ![WeChat](https://oauth.applinzi.com/QR/230/wxp%3a%7C%7Cf2f0SOGAUjQ1ALzigoyN7nW8tK68D2oeU3YO/WeChat.png)
 
- Alipay (支付宝)
+ Alipay (支付宝赞助)
 
  ![Alipay](https://oauth.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
+ 
