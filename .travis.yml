@@ -11,4 +11,4 @@ before_install:
   - composer self-update && composer install --no-interaction
   - cd tests
 
-script: phpunit -v
+script: bin/phpunit -v
