@@ -1,7 +1,6 @@
-# JWSign
-php Json Wed Sign class
-
+# Json Wed Sign (RSA)
 -----
+This is a class of data encryption and decryption
 
 #### Travis CI
 
@@ -40,7 +39,7 @@ Use [Composer](https://getcomposer.org) to install the library.
 
     $jwsign = new jwsign();
     $jwsign->SetPrivate($accesskey);
-    
+
 ```
 
 ### Get Pubkey
@@ -50,14 +49,14 @@ Use [Composer](https://getcomposer.org) to install the library.
 ```php
 
     $Pubkey = $jwsign->GetPubkey();
-    
+
     var_dump($Pubkey);
     array(3) {
         ["pub"]=>string(451) "-----BEGIN PUBLIC KEY-----\nMIIBIjA....NjQIDAQA\n-----END PUBLIC KEY----"
         ["bits"]=>int(2048)
         ["kid"]=>string(43) "cjbdM-CeRfP...5BNYQuksIIgmk"
     }
-    
+
 ```
 
 ### Sign Message
@@ -74,9 +73,9 @@ Use [Composer](https://getcomposer.org) to install the library.
             "token":"NAM...YgV"
         }
     ');
-    
+
     $JsonStr = $jwsign->SignMessage($Message);
-    
+
     var_dump($JsonStr);
     string(557) "{
         "message":"eyJtZXRiO...Z1YifQ==",
@@ -84,7 +83,7 @@ Use [Composer](https://getcomposer.org) to install the library.
         "kid":"cjOdM-CORfPGa...j-0I5BNYQuksIIgmk",
         "sign":"hXvBULK2wSroVFZ...-HYHG7l8Epixikg"
         }"
-    
+
 ```
 
 ### Pubkey Verify
@@ -100,12 +99,12 @@ Use [Composer](https://getcomposer.org) to install the library.
         }';
     $sign = 'hXvBULK2wvSroVFZ...-HKbHGDYHG7l8Epixikg';
     $pub = '-----BEGIN PUBLIC KEY-----\nMIIBIjA....NjQIDAQA\n-----END PUBLIC KEY----';
-    
+
     $Str = $jwsign->PubkeyVerify($value, $sign, $pub);
-    
+
     var_dump($Str);
     bool(true)
-    
+
 ```
 
 ### Get Message
@@ -119,7 +118,7 @@ Use [Composer](https://getcomposer.org) to install the library.
         "kid":"cjOdM-CORfPGa...j-0I5BNYQuksIIgmk"
         }';
     $Str = json_decode($value, true);
-    
+
     var_dump(base64_decode($Str['message']));
     string(100) "{
             "method":"pay",
@@ -127,7 +126,7 @@ Use [Composer](https://getcomposer.org) to install the library.
             "version":"1.0",
             "token":"NAM...YgV"
         }"
-    
+
 ```
 
 Donate
@@ -147,4 +146,4 @@ Your donation makes CODE better.
  Alipay (支付宝赞助)
 
  ![Alipay](https://oauth.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
- 
+

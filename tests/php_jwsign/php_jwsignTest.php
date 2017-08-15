@@ -4,7 +4,7 @@ use php_jwsign;
 use php_jwsign\jwsign;
 use PHPUnit\Framework\TestCase;
 class php_jwsignTest extends TestCase{
-  
+
   public function testEncryptedData(){
     $Message = 'Hello';
     $KeyUrl = 'Private.key';
@@ -19,5 +19,5 @@ class php_jwsignTest extends TestCase{
     $this->assertTrue(!is_bool($JsonStr));
     return array($Pubkey['pub'], $JsonStr);
   }
-  
+
 }
