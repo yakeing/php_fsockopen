@@ -10,10 +10,9 @@ class php_jwsignTest extends TestCase{
   public function testSign(){
     $jws = new jwsign();
     $Message = 'Helloworld';
-    //$privateFile = 'private.key';
-    $privateFile = dirname(__FILE__);
+    $privateFile = dirname(__FILE__).'/private.key';
     //$accesskey = file_get_contents($privateFile);
-    $this->assertEquals('uuu', $privateFile);
+    $this->assertTrue(is_file($privateFile));
     // $jws = new jwsign();
     // $jws->SetPrivate($accesskey);
     // $Pubkey = $jws->GetPubkey();
