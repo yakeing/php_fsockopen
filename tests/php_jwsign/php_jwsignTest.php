@@ -5,7 +5,7 @@ use php_jwsign\jwsign;
 use PHPUnit\Framework\TestCase;
 class php_jwsignTest extends TestCase{
 
-  public function testEncryptedData(){
+  public function testEncryption(){
     $Message = 'Helloworld';
     $privateFile = 'private.key';
     echo dirname(__FILE__);
@@ -22,4 +22,5 @@ class php_jwsignTest extends TestCase{
     // return array($Pubkey['pub'], $JsonStr);
   }
 
+  public function testDecryption(){}
 }
