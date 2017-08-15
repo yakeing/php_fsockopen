@@ -6,6 +6,7 @@
   * @version 1.2
   * Extension: Openssl
  **/
+fff
 namespace php_jwsign;
 class jwsign{
 }
