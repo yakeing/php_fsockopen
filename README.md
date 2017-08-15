@@ -1,6 +1,6 @@
 # Json Wed Sign (RSA)
 -----
-This is a class of data encryption and decryption
+This is a function wrapping through the Openssl to sign and validate the data, which ensures the integrity and security of the original data.
 
 #### Travis CI
 
