@@ -29,6 +29,9 @@ class php_jwsignTest extends TestCase{
     return array($jws, $Pubkey['pub'], $JsonStr);
   }
 
+  /**
+  * @depends testSign
+  */
   public function testVerify(array $args){
     list($jws, $pub, $JsonStr) = $args;
     $arrayStr = json_decode($JsonStr, true);
