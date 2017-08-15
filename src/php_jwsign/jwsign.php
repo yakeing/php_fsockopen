@@ -13,7 +13,7 @@ class jwsign{
 
 	//construct
 	public function __construct(){
-		extension_loaded('openssl') or die('Openssl extensions support is required');
+		//extension_loaded('openssl') or die('Openssl extensions support is required');
 	}//END __construct
 
 	//Set Private
