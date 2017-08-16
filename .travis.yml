@@ -14,3 +14,12 @@ before_install:
   - cd tests
 
 script: phpunit -v
+after_script:
+  - pwd
+  - cd ../
+#  - git init
+  - git config --global user.name "yakeing"
+  - git config --global user.email "yakeing@gmail.com"
+  - git tag v1.2
+  - git show v1.2
+  - git push --force --quiet "https://${TOKEN}@github.com/yakeing/php_fsockopen.git" master:master
