@@ -1,17 +1,17 @@
 # Json Wed Sign (RSA)
------
+
 This is a function wrapping through the Openssl to sign and validate the data, which ensures the integrity and security of the original data.
 
-#### Travis CI
+### Travis CI
 
 [![Travis-ci](https://api.travis-ci.org/yakeing/php_jwsign.svg)](https://travis-ci.org/yakeing/php_jwsign)
 
-#### Packagist
+### Packagist
 
 [![Version](http://img.shields.io/packagist/v/yakeing/php_jwsign.svg)](https://packagist.org/packages/yakeing/php_jwsign)
 [![Downloads](http://img.shields.io/packagist/dt/yakeing/php_jwsign.svg)](https://packagist.org/packages/yakeing/php_jwsign)
 
-#### Github
+### Github
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_jwsign/total.svg)](https://github.com/yakeing/php_jwsign)
 [![Size](https://img.shields.io/github/size/yakeing/php_jwsign/src/php_jwsign/jwsign.php.svg)](https://github.com/yakeing/php_jwsign)
@@ -33,8 +33,6 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ### JWSign init
 
----
-
 ```php
 
     $jwsign = new jwsign();
@@ -43,8 +41,6 @@ Use [Composer](https://getcomposer.org) to install the library.
 ```
 
 ### Get Pubkey
-
----
 
 ```php
 
@@ -60,8 +56,6 @@ Use [Composer](https://getcomposer.org) to install the library.
 ```
 
 ### Sign Message
-
----
 
 ```php
 
@@ -88,8 +82,6 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ### Pubkey Verify
 
----
-
 ```php
 
     $value = '{
@@ -109,7 +101,6 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ### Get Message
 
----
 ```php
 
     $value = '{
