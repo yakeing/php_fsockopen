@@ -27,7 +27,7 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ```
 
-    $ composer require yakeing/php_jwsign
+    $ composer require yakeing/php_fsockopen
 
 ```
 
