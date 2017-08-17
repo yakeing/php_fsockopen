@@ -8,7 +8,6 @@ use PHPUnit\Framework\TestCase;
 class php_jwsignTest extends TestCase{
 
   public function testSign(){
-    $jws = new jwsign();
     $Message = base64_encode('
         {
             "method":"pay",
