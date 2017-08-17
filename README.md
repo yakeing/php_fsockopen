@@ -1,0 +1,103 @@
+# php_curl
+
+[fsockopen](http://www.php.net/manual/zh/function.fsockopen.php) is [socket](http://baike.baidu.com/link?url=vEfhjKHoJNnb5eN2qzUIUtviPBG8zeEv8-PSGBFv7YyVE0JoRVGv_APfOLXCsFVtjaf3h12OSLvUwJaUPn_Wmq) package function, in addition to the basic commonly used [TCP://](http://baike.baidu.com/item/TCP%2FIP%E5%8D%8F%E8%AE%AE) communication function, it also has other powerful communication function, [UDP:// ](http://baike.baidu.com/link?url=NpRzddM-7gSodefpLJ3Y9CaoYirrM6UVsymQ2dnPBU_O_q9GwWSc7imxtSwEcb-8RlBMbzr6wVTbTpmOk_bglx6FX9q8VLlF3NVQs7Yi0xzz5NArvxQAZpQJtgYBIclosdU6AkrAM7n6oJs1K8LfL_) unix:// / udg:// and so on various protocols.
+
+You can use  [stream_get_transports](http://php.net/manual/zh/function.stream-get-transports.php) to get the current server registered socket transfer protocol list to determine whether to support the need to use the agreement.
+
+### Travis CI
+
+[![Travis-ci](https://api.travis-ci.org/yakeing/php_fsockopen.svg)](https://travis-ci.org/yakeing/php_fsockopen)
+
+### Packagist
+
+[![Version](http://img.shields.io/packagist/v/yakeing/php_fsockopen.svg)](https://packagist.org/packages/yakeing/php_fsockopen)
+[![Downloads](http://img.shields.io/packagist/dt/yakeing/php_fsockopen.svg)](https://packagist.org/packages/yakeing/php_fsockopen)
+
+### Github
+
+[![Downloads](https://img.shields.io/github/downloads/yakeing/php_fsockopen/total.svg)](https://github.com/yakeing/php_fsockopen)
+[![Size](https://img.shields.io/github/size/yakeing/php_fsockopen/src/php_fsockopen/fsockopen.php.svg)](https://github.com/yakeing/php_fsockopen)
+[![tag](https://img.shields.io/github/tag/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen)
+[![Language](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_fsockopen)
+[![License](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_fsockopen)
+
+BY: [yakeing](http://weibo.com/yakeing)
+
+### Installation
+
+Use [Composer](https://getcomposer.org) to install the library.
+
+```
+
+    $ composer require yakeing/php_fsockopen
+
+```
+
+Author [yakeing](http://weibo.com/yakeing)
+
+### Initialization parameter
+
+- [x] Sample：
+```php
+    $fs = new fsockopen();
+    $ret = $fs->init(
+        10, //Running time / sec (optionally)
+        tcp, //transport protocol (optionally)
+        true //Blocking mode switch (optionally)
+        );
+```
+
+### Get network resources
+
+- [x] Sample：
+```php
+    $ret = $fs->GET(
+        $Url , //Destination URL
+        $Referer , //Forge Referer (optionally)
+        $Cookie //This Cookie (optionally)
+    );
+```
+
+
+### POST Submit Form
+
+- [x] Sample：
+```php
+    $ret = $fs->POST(
+        $Url , //Destination URL
+        $Content , //Submit content: key/vvalue&...
+        $Referer , //Forge Referer (optionally)
+        $Cookie, //This Cookie (optionally)
+        $ContentType //Submission method (optionally)
+    );
+```
+
+### POST File
+
+- [x] Sample：
+```php
+    $ret = $fs->POST_FILE(
+        $Url , //Destination URL
+        $File, //File OR Picture address: ['01.jpg','02.jpg',...]
+        $Referer , //Forge Referer (optionally)
+        $Cookie, //This Cookie (optionally)
+    );
+```
+
+Donate
+---
+Your donation makes CODE better.
+
+ Bitcoin (比特币赞助)
+
+ 1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU
+
+ ![Bitcoin](https://oauth.applinzi.com/QR/230/bitcoin%3a1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU/Bitcoin.png)
+
+ WeChat (微信赞助)
+
+ ![WeChat](https://oauth.applinzi.com/QR/230/wxp%3a%7C%7Cf2f0SOGAUjQ1ALzigoyN7nW8tK68D2oeU3YO/WeChat.png)
+
+ Alipay (支付宝赞助)
+
+ ![Alipay](https://oauth.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
