@@ -3,25 +3,26 @@
  * fsockopen class
  * 是 socket 套接字链接的封装函数
  * @author http://weibo.com/yakeing
- * @version 2.0
+ * @version 2.1
  */
 namespace php_fsockopen;
 class fsockopen{
 	private $stream = true; //阻塞模式
 	private $timeout = 5; //连接/运行时间
 	private $xport = 'tcp'; //连接协议 tcp
-	//浏览器
-	public $UserAgent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36';
+	public $UserAgent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36';//浏览器
 	public $AcceptEncoding = ''; //压缩编码 gzip, deflate, sdch
 	public $AcceptLanguage = 'zh-CN,zh;q=0.8'; //语言
 	public $Connection = 'Close'; //持久连接 keep-alive 关闭 Close
 	public $HttpVersion = 'HTTP/1.1'; //使用HTTP 1.0协议，服务器会主动放弃chunked编码
 	public $OnContinue = false; // 关闭 HTTP/1.1 100 Continue 返回 可能造成 HTTP/1.1 417 Expectation Failed
 	public $Content_Type = 'application/x-www-form-urlencoded;charset=utf-8'; //提交表单方式
+
 	//构造函数
 	public function __construct(){
 		function_exists('fsockopen') or $this->ERR('php需要fsockopen函数支持或被关闭', false);
 	} //END __construct
+
 	//错误处理
 	private function ERR($str, $KeepRunning=true){
 		if($KeepRunning){
@@ -30,6 +31,7 @@ class fsockopen{
 			throw new Exception($str); //抛出异常
 		}
 	} //END ERR
+
 	//初始化 $timeout=时长, $xport=协议, $stream =阻塞模式
 	public function init($timeout='', $xport='', $stream = ''){
 		if(!empty($xport)){
@@ -46,6 +48,7 @@ class fsockopen{
 			$this->timeout = $timeout;
 		}
 	} //END init
+
 	//建立新通道连接
 	private function NewChannel($url){
 		$errno = 0;
@@ -87,6 +90,7 @@ class fsockopen{
 		$path = isset($purl['path'])?$purl['path']:'/';
 		return array($fp, $path.$query, $purl);
 	} //END NewChannel
+
 	//发送 POST 文件
 	public function POST_FILE($Url, $File, $Referer='', $Cookie=''){
 		$file_array = is_array($File) ? $File : array($File);
@@ -118,6 +122,7 @@ class fsockopen{
 		$ContentType = 'multipart/form-data; boundary='.$boundary;
 		return $this->POST($Url, $data, $Referer, $Cookie, $ContentType);
 	} //END POST_ FILE
+
 	//POST 方式
 	public function POST($Url, $Content, $Referer='', $Cookie='', $ContentType=''){
 		$ContentType = empty($ContentType) ? $this->Content_Type : $ContentType;
@@ -147,6 +152,7 @@ class fsockopen{
 		$header .= "\r\n";
 		return $this->fwrite_out($fp, $header.$Content);
 	} //END POST
+
 	//GET 方式
 	public function GET($Url, $Referer='', $Cookie=''){
 		list($fp, $path, $purl) = $this->NewChannel($Url);
@@ -171,6 +177,7 @@ class fsockopen{
 		$header .= "\r\n";
 		return $this->fwrite_out($fp, $header);
 	} //END GET
+
 	//处理 Chunked 分块字段 Transfer-Encoding:chunked
 	private function DecodeChunked($Body){
 		$ret = '';
@@ -185,6 +192,7 @@ class fsockopen{
 		}
 		return $ret;
 	} //END DecodeChunked
+
 	//获取数据包
 	private function fwrite_out($fp, $data){
 		$ret='';

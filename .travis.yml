@@ -21,6 +21,6 @@ after_script:
 ##  - git init
   - git config --global user.name "yakeing"
   - git config --global user.email "yakeing@gmail.com"
-  - git tag v2.0
-  - git show v2.0
+  - git tag v2.1
+  - git show v2.1
   - git push --force --tags --quiet "https://${TOKEN}@github.com/yakeing/php_fsockopen.git" master:master
