@@ -39,9 +39,9 @@ Use [Composer](https://getcomposer.org) to install the library.
 ```php
     $fs = new fsockopen();
     $ret = $fs->init(
-        10, //Running time / sec (optionally)
-        tcp, //transport protocol (optionally)
-        true //Blocking mode switch (optionally)
+        10, //Running time / sec (optional)
+        tcp, //transport protocol (optional)
+        true //Blocking mode switch (optional)
         );
 ```
 
@@ -51,8 +51,8 @@ Use [Composer](https://getcomposer.org) to install the library.
 ```php
     $ret = $fs->GET(
         $Url , //Destination URL
-        $Referer , //Forge Referer (optionally)
-        $Cookie //This Cookie (optionally)
+        $Referer , //Forge Referer (optional)
+        $Cookie //This Cookie (optional)
     );
 ```
 
@@ -64,9 +64,9 @@ Use [Composer](https://getcomposer.org) to install the library.
     $ret = $fs->POST(
         $Url , //Destination URL
         $Content , //Submit content: key/vvalue&...
-        $Referer , //Forge Referer (optionally)
-        $Cookie, //This Cookie (optionally)
-        $ContentType //Submission method (optionally)
+        $Referer , //Forge Referer (optional)
+        $Cookie, //This Cookie (optional)
+        $ContentType //Submission method (optional)
     );
 ```
 
@@ -77,8 +77,8 @@ Use [Composer](https://getcomposer.org) to install the library.
     $ret = $fs->POST_FILE(
         $Url , //Destination URL
         $File, //File OR Picture address: ['01.jpg','02.jpg',...]
-        $Referer , //Forge Referer (optionally)
-        $Cookie, //This Cookie (optionally)
+        $Referer , //Forge Referer (optional)
+        $Cookie, //This Cookie (optional)
     );
 ```
 
