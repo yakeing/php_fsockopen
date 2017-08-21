@@ -1,6 +1,6 @@
 # php_fsockopen
 
-[fsockopen](http://www.php.net/manual/zh/function.fsockopen.php) is [socket](http://baike.baidu.com/link?url=vEfhjKHoJNnb5eN2qzUIUtviPBG8zeEv8-PSGBFv7YyVE0JoRVGv_APfOLXCsFVtjaf3h12OSLvUwJaUPn_Wmq) package function, in addition to the basic commonly used [TCP://](http://baike.baidu.com/item/TCP%2FIP%E5%8D%8F%E8%AE%AE) communication function, it also has other powerful communication function, [UDP:// ](http://baike.baidu.com/link?url=NpRzddM-7gSodefpLJ3Y9CaoYirrM6UVsymQ2dnPBU_O_q9GwWSc7imxtSwEcb-8RlBMbzr6wVTbTpmOk_bglx6FX9q8VLlF3NVQs7Yi0xzz5NArvxQAZpQJtgYBIclosdU6AkrAM7n6oJs1K8LfL_) unix:// / udg:// and so on various protocols.
+[fsockopen](http://www.php.net/manual/zh/function.fsockopen.php) is socket package function, in addition to the basic commonly used TCP:// communication function, it also has other powerful communication function, UDP:// unix:// / udg:// and so on various protocols.
 
 You can use  [stream_get_transports](http://php.net/manual/zh/function.stream-get-transports.php) to get the current server registered socket transfer protocol list to determine whether to support the need to use the agreement.
 
