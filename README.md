@@ -33,8 +33,6 @@ Use [Composer](https://getcomposer.org) to install the library.
 
 ```
 
-Author [yakeing](http://weibo.com/yakeing)
-
 ### Initialization parameter
 
 - [x] Sample：
