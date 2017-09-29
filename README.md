@@ -18,8 +18,8 @@ You can use  [stream_get_transports](http://php.net/manual/zh/function.stream-ge
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_fsockopen/total.svg)](https://github.com/yakeing/php_fsockopen)
 [![Size](https://img.shields.io/github/size/yakeing/php_fsockopen/src/php_fsockopen/fsockopen.php.svg)](https://github.com/yakeing/php_fsockopen)
 [![tag](https://img.shields.io/github/tag/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen)
-[![Language](https://oauth.applinzi.com/SvgLabel/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_fsockopen)
-[![License](https://oauth.applinzi.com/SvgLabel/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_fsockopen)
+[![Language](https://oauth.applinzi.com/Badge/4D4D4D/Language/F66000/PHP/image.svg)](https://github.com/yakeing/php_fsockopen)
+[![License](https://oauth.applinzi.com/Badge/4D4D4D/License/007EC6/MPL-2.0/image.svg)](https://github.com/yakeing/php_fsockopen)
 
 BY: [yakeing](http://weibo.com/yakeing)
 
