@@ -94,7 +94,7 @@ Your donation makes CODE better.
 
  WeChat (微信赞助)
 
- ![WeChat](https://oauth.applinzi.com/QR/230/wxp%3a%7C%7Cf2f0SOGAUjQ1ALzigoyN7nW8tK68D2oeU3YO/WeChat.png)
+ ![WeChat](https://oauth.applinzi.com/QR/230/https%3a%7C%7Cpayapp.weixin.qq.com%7Cqr%7CAQFjACEumLq80lLV2aIgLwjh*t%3dCwAK%25wechat_pay/WeChat.png)
 
  Alipay (支付宝赞助)
 
