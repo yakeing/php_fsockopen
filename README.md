@@ -90,12 +90,12 @@ Your donation makes CODE better.
 
  1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU
 
- ![Bitcoin](https://app208.applinzi.com/QR/230/bitcoin%3a1Ff2hTfr4EioWv2ZDLKTedUiF9wBBVYSbU/Bitcoin.png)
+ ![Bitcoin](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Bitcoin.png)
 
  WeChat (微信赞助)
 
- ![WeChat](https://app208.applinzi.com/QR/230/https%3a%7C%7Cpayapp.weixin.qq.com%7Cqr%7CAQFjACEumLq80lLV2aIgLwjh*t%3dCwAK%25wechat_pay/WeChat.png)
+ ![WeChat](https://raw.githubusercontent.com/yakeing/Content/master/Donate/WeChat.png)
 
  Alipay (支付宝赞助)
 
- ![Alipay](https://app208.applinzi.com/QR/230/HTTPS%3a%7C%7CQR.ALIPAY.COM%7CTSX082709YGHVXYUQCWKD6/Alipay.png)
+ ![Alipay](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Alipay.png)
