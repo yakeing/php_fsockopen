@@ -10,18 +10,16 @@ You can use  [stream_get_transports](http://php.net/manual/zh/function.stream-ge
 
 ### Packagist
 
-[![Version](http://img.shields.io/packagist/v/yakeing/php_fsockopen.svg)](https://packagist.org/packages/yakeing/php_fsockopen)
+[![Version](http://img.shields.io/packagist/v/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen/releases)
 [![Downloads](http://img.shields.io/packagist/dt/yakeing/php_fsockopen.svg)](https://packagist.org/packages/yakeing/php_fsockopen)
 
 ### Github
 
 [![Downloads](https://img.shields.io/github/downloads/yakeing/php_fsockopen/total.svg)](https://github.com/yakeing/php_fsockopen)
-[![Size](https://img.shields.io/github/size/yakeing/php_fsockopen/src/php_fsockopen/fsockopen.php.svg)](https://github.com/yakeing/php_fsockopen)
-[![tag](https://img.shields.io/github/tag/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen)
-[![Language](https://img.shields.io/github/license/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen)
-[![Language](https://img.shields.io/github/languages/top/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen)
-
-BY: [yakeing](http://weibo.com/yakeing)
+[![Size](https://img.shields.io/github/size/yakeing/php_fsockopen/src/php_fsockopen/fsockopen.php.svg)](https://github.com/yakeing/php_fsockopen/blob/master/src/php_fsockopen/fsockopen.php)
+[![tag](https://img.shields.io/github/tag/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen/releases)
+[![Language](https://img.shields.io/github/license/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen/blob/master/LICENSE)
+[![Php](https://img.shields.io/github/languages/top/yakeing/php_fsockopen.svg)](https://github.com/yakeing/php_fsockopen)
 
 ### Installation
 
@@ -99,3 +97,10 @@ Your donation makes CODE better.
  Alipay (支付宝赞助)
 
  ![Alipay](https://raw.githubusercontent.com/yakeing/Content/master/Donate/Alipay.png)
+
+Author
+---
+
+weibo: [yakeing](https://weibo.com/yakeing)
+
+twitter: [yakeing](https://twitter.com/yakeing)
