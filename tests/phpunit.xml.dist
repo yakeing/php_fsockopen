@@ -2,7 +2,7 @@
 <phpunit bootstrap="./bootstrap.php" colors="true">
     <testsuites>
         <testsuite name="php_fsockopen Test Suite">
-            <directory>./php_fsockopenTest</directory>
+            <directory suffix=".php">./php_fsockopenTest</directory>
         </testsuite>
     </testsuites>
     <filter>
