@@ -12,8 +12,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "php_fsockopen": "src/"
+        "psr-4": {
+            "php_fsockopen\\": "src/"
         }
     },
     "require": {
