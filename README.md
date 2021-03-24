@@ -6,11 +6,11 @@ You can use  [stream_get_transports](http://php.net/manual/zh/function.stream-ge
 
 ### Travis CI badge
 
-[![Travis-ci](https://api.travis-ci.com/yakeing/php_fsockopen.svg?branch=master)](https://travis-ci.com/yakeing/php_fsockopen)
+[![Travis-ci](https://api.travis-ci.com/yakeing/php_fsockopen.svg?branch=main)](https://travis-ci.com/yakeing/php_fsockopen)
 
 ### codecov badge
 
-[![codecov](https://codecov.io/gh/yakeing/php_fsockopen/branch/master/graph/badge.svg)](https://codecov.io/gh/yakeing/php_fsockopen)
+[![codecov](https://codecov.io/gh/yakeing/php_fsockopen/branch/main/graph/badge.svg)](https://codecov.io/gh/yakeing/php_fsockopen)
 
 ### Packagist badge
 
